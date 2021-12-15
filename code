@@ -1,0 +1,41 @@
+import turtle
+import time
+
+gops=turtle.Turtle()
+#gops.speed(1)
+obj=turtle.Screen()
+obj.bgcolor("black")
+time.sleep(2)
+gops.speed(0)
+def cardial(color):
+    lst=["red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","white","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime","red","lime","green","blue","white","grey","cyan","pink","violet","indigo","yellow","orange","lime"]
+
+    for i in range(73):
+        gops.pencolor(color)
+        gops.forward(200)
+        gops.pencolor(lst[i])
+        gops.circle(100)
+        gops.up()
+        gops.right(5)
+        gops.goto(0,0)
+        gops.down()
+    #gops.right(15)
+    gops.pencolor("black")
+    gops.up()
+    gops.goto(16,200)
+    gops.down()
+    gops.circle(-200)
+    gops.circle(-201)
+    gops.circle(-202)
+    gops.up()
+    gops.goto(32, 300)
+    gops.down()
+    gops.circle(-300)
+    gops.circle(-301)
+    gops.circle(-302)
+
+
+
+if __name__=="__main__":
+    cardial("blue")
+time.sleep(3)
